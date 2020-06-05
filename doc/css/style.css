@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
 }
 body{
     
@@ -10,43 +9,49 @@ body{
 }
 nav{
     color: white;
+    
 }
 .logo{
     position: absolute;
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#lg{
+    color: blue;
+    font-weight: bold;
+
 }
 #logo_img{
     background: url('image/monolith_2.png') no-repeat;
     width: 100px;
     height: 50px;
 }
-.img{
-    background: url("image/shillong.jpg");
-}
-ul{
+
+.ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-
+    box-shadow: 0 0 5px white;
+    
 }
-li{
+.li_h{
     float: right;
 
 }
-li a {
+.li_h a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-bottom: 30px;
 }
-li a.active{
+.li_h a.active{
     background-color: wheat;
     color: black;
 }
-li a:hover:not(.active)
+.li_h a:hover:not(.active)
 {
     background-color: wheat;
     color: black;
@@ -66,11 +71,35 @@ h1{
     font-size: 2.5em;
     font-style: italic;
     color: blanchedalmond;
+    text-align: center;
 }
-p{
+.p{
     width: 70%;
     margin-left: 15%;
     margin-bottom: 30px;
+    color: wheat;
+}
+#about{
+    margin-top: 80px;
+}
+.about{
+    width: 70%;
+    margin-left: 20%;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: wheat;
+    font-size: 1.5em;
+    font-style: italic;
+    
+}
+.cul{
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    color: wheat;
+}
+.cul p{
+    font-size: 1.1em;
 }
 .s{
     color: cyan;
@@ -146,15 +175,52 @@ footer{
     background-color: #000;
     color: #fff;
 }
-#el_img{
-    background: url('image/elephant.jpg') no-repeat;
-    width: 500px;
-    height: 250px;
+.e_f{
+    color: white;
 }
-.e{
+.column{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.column1{
+    float: left;
+    width: 12.5%;
+    padding: 5px;
+}
+.column1 span{
+    font-size: 0.8em;
+}
+.col{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.col a{
+    color: white;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+h2{
     color: whitesmoke;
+    font-style: oblique;
 }
-
+#about{
+    text-align: center;
+}
+.column a{
+    text-decoration: none;
+}
+.column span{
+    color:white;
+}
+#related{
+    margin-top: 60px;
+}
 hr.new {
     border-top: 2px dashed whitesmoke;
     width: 50%;
